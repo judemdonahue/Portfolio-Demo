@@ -1,0 +1,370 @@
+@font-face {
+    font-family: 'Oxanium' ;
+    src: url(fonts/Oxanium-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'reenie-beanie' ;
+    src: url(fonts/ReenieBeanie1.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /*background-color: #24252a;*/
+}
+
+
+:root {
+    --lightgrey: #e4e4e4b5;
+    --darkgrey: #24252a;
+    --white: #ffffff ;
+}
+
+/* Nav Bar */
+
+li, a, button {
+    font-family: 'Oxanium';
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--lightgrey)
+}
+
+header h1::after { 
+    cursor: pointer;
+    content: " by jude.";
+    color: var(--white);
+}
+
+.header {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: var(--darkgrey);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.08),#283136,#283136);
+    
+}
+
+.header h1 {
+    margin-right: auto;
+    cursor: pointer;
+    font-family: 'Oxanium';
+    color: var(--lightgrey);
+    display: inline-block;
+    font-size: 20px;
+}
+
+.header nav {
+    padding-top: 10px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Oxanium';
+    font-size: 20px;
+}
+
+
+.header nav ul li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.header nav ul li a {
+   transition: all 0.3s ease 0s;
+    color: var(--lightgrey);
+    text-decoration: none;
+    transition: text-shadow 0.3s linear;
+}
+
+.header nav ul li a:hover {
+    border-color: rgb(253, 255, 253);
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 17px#ffffff81;
+}
+
+button {
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 9px 25px;
+    background-color: rgba(82, 81, 81,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(82, 81, 81, 0.8);
+}
+
+
+body {
+    background-color: var(--lightgrey);
+     
+}
+
+/* End Nav Bar */
+
+/* Portfolio */
+
+#portfolio{
+    margin-bottom: 1000px;
+    margin-top: 250px;
+}
+
+.portfolio-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    max-width: auto;
+}
+
+.portfolio-container h1{
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+portfolio-container p{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 75%;
+}
+
+#portfolio .portfolio-grid h1 {
+    font-family: 'Oxanium';
+    text-align: center;
+}
+
+.portfolio-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: auto;
+}
+.portfolio-flex div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.portfolio-img1 {
+    display: flex;
+    max-width: 110%;
+    max-height: 110%;
+    margin: 0 auto;
+    margin-top: 300px;
+    width: auto;
+    height: auto;
+    border-style: solid;
+    border-color: #24252a;
+    border-width: 10px;
+}
+
+.portfolio-img2 {
+    display: flex;
+    max-width: 70%;
+    max-height: 70%;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-right: 400px;
+    width: auto;
+    height: auto;
+    border-style: solid;
+    border-color: #24252a;
+    border-width: 10px;
+}
+
+/* End Portfolio */
+
+
+#about .col-right .about-img {
+    display: block;
+    max-width: 70%;
+    max-height: 70%;
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+}
+
+
+  .aboutme {
+    font-family: 'Oxanium';
+  }
+
+  /* About Me Section */
+
+  .about-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-width: auto;
+  }
+
+
+#about .col-right{
+   /* background-color:aqua;*/
+    float: right;
+    display: inline;
+}
+
+#about .col-left{
+  /*  background-color:beige;*/
+}
+
+#about .col-left h1 {
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Oxanium';
+
+}
+
+#about .col-left h2 {
+    text-align: center;
+    font-family: 'Oxanium';
+}
+
+#about .col-left p{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 75%;
+}
+
+#about .col-left span{
+    font-family: 'reenie-beanie';
+    font-size: 100px;
+}
+
+
+  /* End of About Me Section */
+
+
+
+/* Contact Me */
+#contact {
+    font-family: 'Oxanium';
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 500px;
+}
+
+#contact .contact-container {
+    max-width: 800px;
+    text-align: center;
+
+}
+
+#contact .contact-container h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color:#24252a;
+}
+
+#contact .contact-container p {
+    font-weight: 300;
+    color:#24252a;
+}
+
+.container1 {
+    width: 50%;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container1 .contactinfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container1 .contactinfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container1 .contactinfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+#contact h1 {
+    font-family: 'Oxanium';
+    text-align: center;
+}
+
+#contact .contact-flex {
+    font-family: 'Oxanium';
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-flex div {
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #24252a;
+    border-width: 10px;
+    margin: 10px;
+    padding: 100px;
+    font-size: 30px;
+  }
+
+/* End Contact Me */
+
+
+
+
+  /* Footer */
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.footer h2 {
+    font-size: 20px;
+}
+/* End Footer */
+
+
+
+
+/* Transition Styling */
+.open-transition {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #24252a;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.08),#283136,#283136);
+    z-index: 9999;
+    animation: slide .4s ease-in-out forwards;
+    animation-delay: .5s;
+  }
+  
+  @keyframes slide {
+    from {
+      transform: scaleY(1);
+      transform-origin: top left;
+    }
+    to {
+      transform: scaleY(0);
+      transform-origin: top left;
+    }
+  }
+  /* End transition styling */
